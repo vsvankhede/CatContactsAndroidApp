@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/grid"
+    android:paddingTop="@dimen/grid">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv.profile"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:src="@drawable/cat_3" />
+
+    <TextView
+        android:id="@+id/tv.name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:text="Cat"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="@dimen/primary_text" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/grid">
+        <ImageView
+            android:id="@+id/iv.edit"
+            android:src="@drawable/ic_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/grid" />
+        <View
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/divider_horizontal_bright"/>
+        <ImageView
+            android:id="@+id/iv.delete"
+            android:src="@drawable/ic_delete"
+            android:padding="@dimen/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/secondary_text_light"/>
+    </LinearLayout>
+</LinearLayout>
